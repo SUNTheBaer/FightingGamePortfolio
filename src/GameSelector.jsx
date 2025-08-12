@@ -21,8 +21,23 @@ function GameSelector() {
         { value: 'guilty-gear-xrd-rev-2', label: 'Guilty Gear Xrd Rev 2'}
     ]
 
+    const customStyles = {
+        singleValue: provided => ({
+            ...provided,
+            color: '#000000'
+        }),
+        control: provided => ({
+            ...provided,
+            color: '#000000'
+        }),
+        option: provided => ({
+            ...provided,
+            color: '#000000'
+        })
+    }
+
     return(
-        <Select options={options} />
+        <Select styles={customStyles} options={options} />
     );
 }
 
