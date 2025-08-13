@@ -1,16 +1,23 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 function Header() {
+
+    const navbarStyle = {
+        padding: '50px'
+    }
+
     return(
-        <header>
-            <h1>Fighting Game Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Portfolio Builder</a></li>
-                    <li><a href="#">User Lookup</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <hr></hr>
-        </header>
+        <Navbar expand="lg" className="header-navbar">
+            <Container>
+                <Navbar.Brand href='#home'>Fighting Game Portfolio</Navbar.Brand>
+                    <Nav className='header-nav'>
+                        <Nav.Link style={navbarStyle} href='#builder'>Portfolio Builder</Nav.Link>
+                        <Nav.Link style={navbarStyle} href='#lookup'>User Lookup</Nav.Link>
+                    </Nav>
+            </Container>
+        </Navbar>
     );
 }
 

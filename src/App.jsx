@@ -1,14 +1,13 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import GameSelector from "./GameSelector";
-import Card from "./Card"
+import Header from './Header';
+import Footer from './Footer';
+import GameSelector from './GameSelector';
+import About from './About';
 
 function App() {
   return(
     <>
-      <Card/>
-      <Header/>
-      <GameSelector/>
+      <Header/> 
+      <About/>
       <Footer/>
     </>
   );

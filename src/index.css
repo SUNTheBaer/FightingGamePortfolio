@@ -1,6 +1,3 @@
-.card{
-  border: 1px solid #bebebe;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.096);
-  padding: 20px;
+.header-navbar .header-nav{
+  display: inline-block;
 }

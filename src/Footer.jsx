@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer>
-            <p>&copy; {new Date().getFullYear()} Your website name</p>
+            <p>&copy; {new Date().getFullYear()} Fighting Game Portfolio by William Padron</p>
         </footer>
     );
 }
